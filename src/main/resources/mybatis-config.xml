@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+     <!--配置别名-->
+    <typeAliases>
+        <!--类型的别名就是类名-->
+        <package name="com.whhp.k9501.entity"/>
+    </typeAliases>
+
+    <!--添加分页的插件-->
+    <plugins>
+        <!-- com.github.pagehelper为PageHelper类所在包名 -->
+        <plugin interceptor="com.github.pagehelper.PageInterceptor"/>
+    </plugins>
+
+
+    <!--加载sql映射文件-->
+    <mappers>
+        <!--<mapper resource="com/whhp/k9501/mapper/DistrictMapper.xml"/>-->
+    </mappers>
+
+</configuration>

@@ -1,0 +1,38 @@
+HotelManage 
+入住管理  bill  
+  入住信息查询 inroominfo.html 
+  入住信息添加 checkin.html
+  消费记录 billinfo.html
+  结账退房 out.html
+
+订单管理 order  
+  订单信息管理  orderinfo.html 
+  添加订单  addorder.html
+
+会员管理  vip  
+  会员信息管理(改、删) vipmanage.html
+  添加会员 addvip.html 
+
+客房管理  room 
+  客房信息管理 roommanage.html
+  添加客房  addroom.html
+
+用户管理  user 
+  用户信息管理(查删、改) usermanage.html
+  新增用户  adduser.html(密码设置、权限分配--相应的权限所拥有的功能不一样)
+
+客人意见  suggestion>>suggestion.html
+   
+数据库
+用户表  Users(主键表Job)
+客房表  Rooms(主键表RoomType)
+会员表  Vips
+订单表  Orders(主键表Rooms,关联入住房间号)
+账单表  Bills(主键表Rooms,关联入住房间号)
+入住表  InRoomInfo(主键表Rooms,关联入住房间号)
+
+房间类型表  RoomType
+职务权限表  Job
+
+
+  
